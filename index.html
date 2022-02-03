@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Outfit", sans-serif;
+        line-height: 1.5;
+        background-color: hsl(217, 54%, 11%);
+        color: hsl(215, 32%, 27%);
+      }
+
+      p {
+        font-size: 18px;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      a:hover{
+        color: hsl(178, 100%, 50%);
+      }
+      .img{
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+      }
+      a .img:hover{
+        background-color: hsl(178, 100%, 50%);
+        opacity: 0.8;
+      }
+      hr{
+        border-top: 0.5px hsl(215, 32%, 27%);
+      }
+      .card {
+        background-color: hsl(216, 50%, 16%);
+        display: block;
+        width: 25%;
+        height: 50%;
+        padding: 25px;
+        margin: 100px auto;
+        border-radius: 20px;
+      }
+      .card-body{
+        margin-top: 25px;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      .background{
+        position: absolute;
+        z-index: -1;
+        top: 17%;
+        left: 34%;
+        display: block;
+        width: 32%;
+        opacity: 0.1;
+        border-radius: 20px;
+        height: 675px;
+        background-color: black;
+      }
+
+      @media screen and (max-width: 375px){
+        .card{
+          width: 100%;
+        }
+        .background{
+          width: 100%;
+          top: 0;
+          left: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card-header">
+        <a href="#" ><img class="img" src="./images/image-equilibrium.jpg" alt="image" srcset="" /></a>
+      </div>
+      <div class="card-body">
+        <a href="#" style="font-size: 24px;">Equilibrium #3429</a>
+        <p>Our Equilibrium collection promotes balance and calm.</p>
+        <p style="display: flex; justify-content: space-between;">
+          <span style="color: hsl(178, 100%, 50%)">
+            <img src="./images/icon-ethereum.svg" alt="etherium" srcset="" />
+            0.041 ETH</span
+          >
+          <span><img src="./images/icon-clock.svg" alt="days" srcset="" /> 3 days left</span>
+        </p>
+        <hr />
+        <div class="footer">
+          <span style=" padding: 5px;"
+            ><img style="height: auto; width: 10%; border: 1px solid white; border-radius: 50%; margin-top: 5px;" src="./images/image-avatar.png" alt="avatar" srcset=""
+          /></span>
+          <span style="padding: 5px;">Creation of <a href="#">Jules Wyvern</a></span>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Rizki Putra Julianto</a>.
+    </div>
+    <div class="background"></div>
+  </body>
+</html>
